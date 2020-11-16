@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-image: url("https://images.unsplash.com/photo-1496167117681-944f702be1f4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80");
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  will-change: transform;
+  overflow: auto;
+}
+
+body {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+body header {
+  font-family: "Bebas Neue", cursive;
+}
+
+body header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 0.4em;
+  font-family: "Changa", sans-serif;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px black;
+}
+
+body header .custom-border {
+  position: relative;
+  padding: 0;
+  height: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(black), to(cyan));
+  background: linear-gradient(to right, black, cyan);
+}
+
+body main .landing-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 4.5%;
+  margin-bottom: 10%;
+}
+
+body main .landing-page .card {
+  width: 18rem;
+  height: 23rem;
+  margin: 2em;
+  border: none;
+  border-radius: 1em;
+  background: white;
+  color: black;
+  text-align: center;
+}
+
+body main .landing-page .card .btn {
+  margin: 0;
+  width: 100%;
+  border-radius: 0;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+}
+
+body main .landing-page .card .card-title {
+  font-weight: bold;
+}
+
+body main .landing-page .card img {
+  border-radius: 1em;
+}
+
+body main .landing-page .simulation .card-title {
+  padding-top: 20px;
+}
+
+body main .landing-page .about .card-title {
+  padding-top: 14px;
+}
+
+body main .about-page {
+  color: black;
+  margin-top: 3%;
+}
+
+body main .about-page .card {
+  margin: 2rem;
+  border-radius: 1em;
+  text-align: center;
+}
+
+body main .about-page .card .card-header {
+  background-color: white;
+}
+
+body main .about-page .card .card-header button {
+  color: black;
+}
+
+body main .about-page .card .card-body {
+  background-color: rgba(0, 0, 0, 0.4);
+  text-align: left;
+}
+
+body main .about-page .card .card-body .flowchart {
+  text-align: center;
+}
+
+body main .about-page .card .custom-scroll {
+  overflow-y: scroll;
+  height: 20em !important;
+}
+
+body main .simulation-page {
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  text-shadow: 1px 0px 1px black;
+  /* .active-stations{
+        border: 1px solid white;
+        border-radius: 2em;
+        height: 4rem;
+        margin-top: 3.5%;
+        padding: 1rem;
+        img {
+          width: 30px;
+        }
+        .transmission{
+          display: flex;
+        }
+      } */
+}
+
+body main .simulation-page .station {
+  height: 20rem;
+}
+
+body main .simulation-page .station img {
+  padding-top: 1em;
+  width: 130px;
+}
+
+body main .simulation-page .station .holder .select-station {
+  background-color: lightslategray;
+  font-size: 0.5em;
+  color: white;
+}
+
+body main .simulation-page .station .stats {
+  text-align: center;
+  padding-top: 1em;
+}
+
+body main .simulation-page .send-data {
+  height: 6rem;
+  padding-top: 1.3rem;
+}
+
+body main .simulation-page .send-data button {
+  background: #778899;
+  padding: .5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+}
+
+body main .simulation-page .send-data button:hover {
+  color: black;
+}
+
+body main .simulation-page .router {
+  margin-bottom: 0.5em;
+  margin-top: 0.5em;
+}
+
+body main .simulation-page .router img {
+  width: 110px;
+}
+
+body main .simulation-page .router .router-stats {
+  padding-top: 1em;
+}
+
+body main .simulation-page .data-sender p, body main .simulation-page .data-receiver p {
+  padding-top: 4.5rem;
+}
+
+body main .simulation-page .data-sender img, body main .simulation-page .data-receiver img {
+  width: 80px;
+  height: 80px;
+}
+
+body main .team-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 4.5%;
+}
+
+body main .team-page .card {
+  width: 14rem;
+  margin: 2em;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(13, 13, 245, 0.719)));
+  background: linear-gradient(white, rgba(13, 13, 245, 0.719));
+  border: 1px solid black;
+  color: white;
+  text-align: center;
+}
+
+body main .team-page .card .card-title {
+  font-weight: bold;
+}
+
+body main .team-page .download {
+  background: -webkit-gradient(linear, left top, right top, from(white), to(rgba(13, 13, 245, 0.719)));
+  background: linear-gradient(to right, white, rgba(13, 13, 245, 0.719));
+  padding: 1rem;
+  border-radius: 2rem;
+  text-decoration: none;
+  color: black;
+  margin-top: 3rem;
+  height: 3.3rem;
+}
+
+body main .team-page .download:hover {
+  background: white;
+}
